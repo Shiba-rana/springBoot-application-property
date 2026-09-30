@@ -11,7 +11,7 @@ public class Demo1Application {
 		ApplicationContext context = SpringApplication.run(Demo1Application.class, args);
 
 		PaymentGateway paymentGateway = context.getBean(PaymentGateway.class);
-		PaymentProporties paymentProporties = context.getBean(PaymentProporties.class);
+//		PaymentProperties paymentProperties = context.getBean(PaymentProperties.class);
 
 //		paymentGateway.setType("PAYMENT");
 //		paymentGateway.setRetryCount(5);
@@ -19,9 +19,9 @@ public class Demo1Application {
 //		System.out.println("Payment Gateway Type: " + paymentGateway.getType());
 //		System.out.println("Payment Gateway Retry Count: " + paymentGateway.getRetryCount());
 
-		System.out.println("Payment Property: " + paymentProporties.getType());
-		System.out.println("Payment Property: " + paymentProporties.getRetryCount());
-		System.out.println("Payment Property: " + paymentProporties.getTimeout());
+		System.out.println("Payment Property: " + paymentGateway.getType());
+		System.out.println("Payment Property: " + paymentGateway.getRetryCount());
+		System.out.println("Payment Property: " + paymentGateway.getTimeout());
  	}
 
 }

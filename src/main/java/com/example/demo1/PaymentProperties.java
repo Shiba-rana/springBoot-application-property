@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties("paymentproperty")
-public class PaymentProporties {
+public class PaymentProperties {
 
     private String type;
     private int retryCount;
