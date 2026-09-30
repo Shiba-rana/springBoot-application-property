@@ -10,7 +10,7 @@ public class Demo1Application {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(Demo1Application.class, args);
 
-		PaymentGateway paymentGateway = context.getBean(PaymentGateway.class);
+		PaymentGateway paymentgateway = context.getBean(PaymentGateway.class);
 //		PaymentProperties paymentProperties = context.getBean(PaymentProperties.class);
 
 //		paymentGateway.setType("PAYMENT");
@@ -19,9 +19,11 @@ public class Demo1Application {
 //		System.out.println("Payment Gateway Type: " + paymentGateway.getType());
 //		System.out.println("Payment Gateway Retry Count: " + paymentGateway.getRetryCount());
 
-		System.out.println("Payment Property: " + paymentGateway.getType());
-		System.out.println("Payment Property: " + paymentGateway.getRetryCount());
-		System.out.println("Payment Property: " + paymentGateway.getTimeout());
+//		System.out.println("Payment Property: " + paymentGateway.getType());
+//		System.out.println("Payment Property: " + paymentGateway.getRetryCount());
+//		System.out.println("Payment Property: " + paymentGateway.getTimeout());
+
+		paymentgateway.print();
  	}
 
 }
